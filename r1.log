@@ -1,0 +1,110 @@
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten] MongoDB starting : pid=11096 port=27018 dbpath=./r1 64-bit host=kasidach-virtual-machine
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten] db version v3.6.8
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten] modules: none
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten] build environment:
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten]     distarch: x86_64
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-12-05T02:08:43.215+0700 I CONTROL  [initandlisten] options: { net: { port: 27018 }, replication: { replSet: "cmpos" }, storage: { dbPath: "./r1" }, systemLog: { destination: "file", path: "./r1.log" } }
+2021-12-05T02:08:43.215+0700 I -        [initandlisten] Detected data files in ./r1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-12-05T02:08:43.215+0700 I STORAGE  [initandlisten] 
+2021-12-05T02:08:43.215+0700 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-12-05T02:08:43.215+0700 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-12-05T02:08:43.215+0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=2441M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2021-12-05T02:08:44.732+0700 I STORAGE  [initandlisten] WiredTiger message [1638644924:732677][11096:0x7fb7a1c09ac0], txn-recover: Main recovery loop: starting at 1/181504
+2021-12-05T02:08:44.792+0700 I STORAGE  [initandlisten] WiredTiger message [1638644924:792564][11096:0x7fb7a1c09ac0], txn-recover: Recovering log 1 through 2
+2021-12-05T02:08:44.830+0700 I STORAGE  [initandlisten] WiredTiger message [1638644924:830542][11096:0x7fb7a1c09ac0], txn-recover: Recovering log 2 through 2
+2021-12-05T02:08:44.860+0700 I STORAGE  [initandlisten] WiredTiger message [1638644924:860347][11096:0x7fb7a1c09ac0], txn-recover: Set global recovery timestamp: 0
+2021-12-05T02:08:44.888+0700 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2021-12-05T02:08:44.888+0700 I STORAGE  [initandlisten] The size storer reports that the oplog contains 247 records totaling to 28742 bytes
+2021-12-05T02:08:44.888+0700 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] 
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] 
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2021-12-05T02:08:44.893+0700 I CONTROL  [initandlisten] 
+2021-12-05T02:08:45.040+0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './r1/diagnostic.data'
+2021-12-05T02:08:45.042+0700 I REPL     [initandlisten] Rollback ID is 1
+2021-12-05T02:08:45.043+0700 I STORAGE  [initandlisten] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: 74b9e572-1d66-4631-86af-76c0400f5c32
+2021-12-05T02:08:45.064+0700 I REPL     [initandlisten] No oplog entries to apply for recovery. appliedThrough and checkpointTimestamp are both null.
+2021-12-05T02:08:45.066+0700 I NETWORK  [initandlisten] waiting for connections on port 27018
+2021-12-05T02:08:45.068+0700 I REPL     [replexec-0] New replica set config in use: { _id: "cmpos", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27020", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('61abb1001bfb747319f67199') } }
+2021-12-05T02:08:45.068+0700 I REPL     [replexec-0] This node is localhost:27018 in the config
+2021-12-05T02:08:45.068+0700 I REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2021-12-05T02:08:45.068+0700 I REPL     [replexec-0] Starting replication storage threads
+2021-12-05T02:08:45.069+0700 I REPL     [replexec-0] transition to RECOVERING from STARTUP2
+2021-12-05T02:08:45.069+0700 I REPL     [replexec-0] Starting replication fetcher thread
+2021-12-05T02:08:45.069+0700 I REPL     [replexec-0] Starting replication applier thread
+2021-12-05T02:08:45.069+0700 I REPL     [replexec-0] Starting replication reporter thread
+2021-12-05T02:08:45.069+0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27019
+2021-12-05T02:08:45.069+0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27020
+2021-12-05T02:08:45.069+0700 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for cmpos/localhost:27018,localhost:27019,localhost:27020
+2021-12-05T02:08:45.070+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58096 #1 (1 connection now open)
+2021-12-05T02:08:45.072+0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27019, took 3ms (1 connections now open to localhost:27019)
+2021-12-05T02:08:45.073+0700 I REPL     [replexec-0] Member localhost:27019 is now in state SECONDARY
+2021-12-05T02:08:45.073+0700 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27020, took 4ms (1 connections now open to localhost:27020)
+2021-12-05T02:08:45.074+0700 I REPL     [replexec-1] Member localhost:27020 is now in state PRIMARY
+2021-12-05T02:08:45.074+0700 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27019 (1 connections now open to localhost:27019 with a 5 second timeout)
+2021-12-05T02:08:45.075+0700 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27020 (1 connections now open to localhost:27020 with a 5 second timeout)
+2021-12-05T02:08:45.076+0700 I REPL     [rsSync] transition to SECONDARY from RECOVERING
+2021-12-05T02:08:45.076+0700 I REPL     [rsSync] Resetting sync source to empty, which was :27017
+2021-12-05T02:08:45.076+0700 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27020 (1 connections now open to localhost:27020 with a 0 second timeout)
+2021-12-05T02:08:45.076+0700 I NETWORK  [conn1] received client metadata from 127.0.0.1:58096 conn1: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:08:45.076+0700 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27018 (1 connections now open to localhost:27018 with a 5 second timeout)
+2021-12-05T02:08:45.308+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58106 #2 (2 connections now open)
+2021-12-05T02:08:45.309+0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:58106 conn2: { driver: { name: "NetworkInterfaceTL", version: "4.2.6-18-g6cdb6ab" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:08:45.663+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58108 #3 (3 connections now open)
+2021-12-05T02:08:45.663+0700 I NETWORK  [conn3] received client metadata from 127.0.0.1:58108 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:08:46.071+0700 I REPL     [rsBackgroundSync] sync source candidate: localhost:27020
+2021-12-05T02:08:46.072+0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27020
+2021-12-05T02:08:46.076+0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27020, took 4ms (1 connections now open to localhost:27020)
+2021-12-05T02:08:46.080+0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27020
+2021-12-05T02:08:46.080+0700 I REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27020
+2021-12-05T02:08:46.082+0700 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27020
+2021-12-05T02:08:46.092+0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27020, took 13ms (3 connections now open to localhost:27020)
+2021-12-05T02:08:46.092+0700 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27020, took 10ms (3 connections now open to localhost:27020)
+2021-12-05T02:08:46.123+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58116 #4 (4 connections now open)
+2021-12-05T02:08:46.123+0700 I NETWORK  [conn4] received client metadata from 127.0.0.1:58116 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:08:55.446+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58118 #5 (5 connections now open)
+2021-12-05T02:08:55.446+0700 I NETWORK  [conn5] received client metadata from 127.0.0.1:58118 conn5: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:08:58.657+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58120 #6 (6 connections now open)
+2021-12-05T02:08:58.658+0700 I NETWORK  [conn6] received client metadata from 127.0.0.1:58120 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.6-18-g6cdb6ab" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:09:06.655+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58122 #7 (7 connections now open)
+2021-12-05T02:09:06.656+0700 I NETWORK  [conn7] received client metadata from 127.0.0.1:58122 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.6-18-g6cdb6ab" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:09:20.656+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58124 #8 (8 connections now open)
+2021-12-05T02:09:20.657+0700 I NETWORK  [conn8] received client metadata from 127.0.0.1:58124 conn8: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.6-18-g6cdb6ab" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:09:46.093+0700 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27020 because the pool meets constraints; 2 connections to that host remain open
+2021-12-05T02:11:59.141+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58130 #9 (9 connections now open)
+2021-12-05T02:11:59.141+0700 I NETWORK  [conn9] received client metadata from 127.0.0.1:58130 conn9: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:13:45.070+0700 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for cmpos/localhost:27018,localhost:27019,localhost:27020
+2021-12-05T02:13:45.071+0700 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27020 (2 connections now open to localhost:27020 with a 0 second timeout)
+2021-12-05T02:14:12.691+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:58146 #10 (10 connections now open)
+2021-12-05T02:14:12.691+0700 I NETWORK  [conn10] received client metadata from 127.0.0.1:58146 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.6-18-g6cdb6ab" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2021-12-05T02:18:45.069+0700 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for cmpos/localhost:27018,localhost:27019,localhost:27020
+2021-12-05T02:18:45.075+0700 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for cmpos/localhost:27018,localhost:27019,localhost:27020
+2021-12-05T02:19:20.219+0700 I NETWORK  [conn5] end connection 127.0.0.1:58118 (9 connections now open)
+2021-12-05T02:20:47.166+0700 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2021-12-05T02:20:47.166+0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-12-05T02:20:47.166+0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27018.sock
+2021-12-05T02:20:47.166+0700 I REPL     [signalProcessingThread] shutting down replication subsystems
+2021-12-05T02:20:47.166+0700 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2021-12-05T02:20:47.166+0700 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27020: CallbackCanceled: Reporter no longer valid
+2021-12-05T02:20:47.166+0700 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2021-12-05T02:20:47.166+0700 I REPL     [signalProcessingThread] Stopping replication applier thread
+2021-12-05T02:20:47.166+0700 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host localhost:27020 due to bad connection status; 1 connections to that host remain open
+2021-12-05T02:20:47.166+0700 I REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2021-12-05T02:20:47.167+0700 I REPL     [signalProcessingThread] Stopping replication storage threads
+2021-12-05T02:20:47.167+0700 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-12-05T02:20:47.178+0700 I STORAGE  [WTOplogJournalThread] oplog journal thread loop shutting down
+2021-12-05T02:20:47.178+0700 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-12-05T02:20:47.253+0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-12-05T02:20:47.253+0700 I CONTROL  [signalProcessingThread] now exiting
+2021-12-05T02:20:47.253+0700 I CONTROL  [signalProcessingThread] shutting down with code:0
