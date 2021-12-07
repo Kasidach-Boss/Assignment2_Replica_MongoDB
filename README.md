@@ -29,8 +29,12 @@ rs.initiate(config);<br/>
 rs.status();<br/>
 exit<br/>
 
-# ทดสอบ fialover
+# ทดสอบ failover
 mongo --host cmpos/localhost:27018,localhost:27019,localhost:27020<br/>
 use Assignment2<br/>
 db.getCollection(‘courses’).find({})<br/>
 ps -rf | grep mongod<br/>
+
+Ref<br>
+https://docs.mongodb.com/manual/replication/ <br>
+
